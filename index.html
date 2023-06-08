@@ -9,11 +9,6 @@
 </head>
 <body>
     <h2 class="title">Etch-a-Sketch</h2>
-    <input type="range" min="16" max="64" value="32" step="2" class="slider" id="slider">
-    <div class="grid-slider-text">
-        <span>Grid size:</span>
-        <span id="slider-value">16</span>
-    </div>
     <div id="controls-and-canvas">
         <div class="control-panel">
             <h2 id="colours-title">Colours</h2>
@@ -25,7 +20,12 @@
             <button class="control-button colour" id="black"></button>
             <button class="control-button" id="reset">Reset</button>
         </div>
-        <div class="canvas-container"></div>
+        <div class="canvas-container" onmousedown="return false"></div>
+        <input type="range" orient="vertical" min="16" max="64" value="16" step="2" class="slider" id="slider">
+        <div class="grid-slider-text">
+            <span>Grid size:</span>
+            <span id="slider-value">16</span>
+        </div>
     </div>
 
 </body>

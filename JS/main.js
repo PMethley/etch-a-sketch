@@ -44,10 +44,14 @@ const colourButtons = document.querySelectorAll(".control-button.colour");
 
 colourButtons.forEach((button) => {
     button.addEventListener("click", () => {
-        // document.querySelector(".selected-colour").classList.remove(".selected-colour");
+        document.querySelector(".selected-colour").classList.remove("selected-colour");
         currentColour = button.id;
         button.classList.add("selected-colour");
-    })
+    });
+});
+
+document.getElementById("reset").addEventListener("click", () => {
+    createCanvas();
 })
 
 

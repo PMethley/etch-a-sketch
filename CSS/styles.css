@@ -31,7 +31,19 @@ body{
 
 .grid-slider-text{
     margin: 10px;
+    display: flex;
+    align-items: center;
 }
+
+#slider-value{
+    padding-left: 5px;
+}
+ #slider{
+    appearance: slider-vertical;
+    height: 200px;
+    width: 30px;
+    align-self: center;
+ }
 
 #controls-and-canvas{
     display: flex;
