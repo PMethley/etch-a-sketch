@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.canvas-container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    border-style: solid;
+    margin: 20px;
+}
+
+.canvas-row{
+    display: flex;
+    flex-grow: 1;
+}
+
+.canvas-cell{
+    background-color: white;
+    flex-grow: 1;
+    margin: 0px;
+}
+
+.grid-slider-text{
+    margin: 10px;
+}
+
+#controls-and-canvas{
+    display: flex;
+}
+
+.control-panel{
+    display: flex;
+    flex-direction: column;
+}
+
+#colours-title{
+    text-decoration: underline;
+    align-self: center;
+    margin: 5px;
+    margin-top: 30px;
+}
+
+.control-button{
+    padding: 10px;
+    width: 75px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.control-button:hover{
+    opacity: .6;
+}
+
+#red{
+    background-color: red;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#green{
+    background-color: green;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#purple{
+    background-color: purple;
+}
+
+#black{
+    background-color: black;
+}
+
+#reset{
+    margin-top: 60px;
+}
+
+.selected-colour{
+    border-width: 5px;
+}
